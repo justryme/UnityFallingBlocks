@@ -11,6 +11,8 @@ public class Spawner : MonoBehaviour
     public Vector2 spawnSizeMinMax;
     public float spawnAngleMax;
 
+    public List<AudioClip> clips;
+
     Vector2 screenHalfSizeWorldUnits;
 
     // Start is called before the first frame update
@@ -36,6 +38,11 @@ public class Spawner : MonoBehaviour
             Vector2 spawnPosition = new Vector2(Random.Range(-screenHalfSizeWorldUnits.x, screenHalfSizeWorldUnits.x), screenHalfSizeWorldUnits.y + spawnSize);
             GameObject newBlock = (GameObject)Instantiate(fallingBlockPrefab, spawnPosition, Quaternion.Euler(Vector3.forward * spawnAngle));
             newBlock.transform.localScale = Vector2.one * spawnSize;
+
+            AudioSource audio = GetComponent<AudioSource>();
+
+            audio.clip = clips[Random.Range(0, 4)];
+            audio.Play();
         }       
 
     }
