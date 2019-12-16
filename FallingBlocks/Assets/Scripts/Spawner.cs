@@ -41,7 +41,7 @@ public class Spawner : MonoBehaviour
 
             AudioSource audio = GetComponent<AudioSource>();
 
-            audio.clip = clips[Random.Range(0, 4)];
+            audio.clip = clips[0];
             audio.Play();
         }       
 

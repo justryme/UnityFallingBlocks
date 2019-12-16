@@ -862,11 +862,7 @@ MonoBehaviour:
   spawnSizeMinMax: {x: 0.3, y: 2.3}
   spawnAngleMax: 10
   clips:
-  - {fileID: 8300000, guid: 2682b34599bcbfe46ac0580904ca7c39, type: 3}
-  - {fileID: 8300000, guid: 51c9ba406b9cefe40a79bd3016916bd1, type: 3}
-  - {fileID: 8300000, guid: 712edc218cba50b4dae26f8ad40f7262, type: 3}
-  - {fileID: 8300000, guid: 84a3363b895fa6841a9effdeb720ec9f, type: 3}
-  - {fileID: 8300000, guid: 3c6b540c1655a034da7a5198181be802, type: 3}
+  - {fileID: 8300000, guid: 15eab6aeb87d2b145b4df3999873870b, type: 3}
 --- !u!4 &1738590121
 Transform:
   m_ObjectHideFlags: 0
